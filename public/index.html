@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>give fidi messege</title>
+    <link rel="stylesheet" href="styel.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div id="notif"></div>
+      <h1>kirim <span class="teks-fidi">Fidi</span> <sup>gabut</sup> pesanmu</h1>
+      <form id="inputForm">
+        <!-- bagian nama -->
+        <input
+          class="input-form"
+          type="text"
+          name="nama"
+          id="inputNama"
+          value=""
+          placeholder="Nama"
+          maxlength="25"
+        />
+        <!-- bagian nama end -->
+
+        <!-- bagian pesan -->
+        <div class="boxPesan">
+          <label for="inputPesan" id="hitungHuruf">0</label>
+          <textarea
+            class="input-form"
+            name="pesan"
+            placeholder="Pesan"
+            id="inputPesan"
+          ></textarea>
+        </div>
+        <!-- bagian pesan end -->
+
+        <!-- bagian tombol -->
+        <div class="tombolBox">
+          <!-- tombol yang terhubung ke media -->
+          <button type="button">
+            <label id="tombolMedia" for="media">Media</label>
+          </button>
+          <!-- tombolKirim -->
+          <button type="submit" id="tombolKirim" class="tombolKirim" disabled>
+            …
+          </button>
+          <button id="hapusForm" type="reset">hapus</button>
+        </div>
+        <!-- bagian tombol end -->
+
+        <!-- bagian file -->
+        <input
+          type="file"
+          name="media"
+          id="media"
+          value=""
+          accept="image/*,video/*"
+        />
+        <div id="pratinjau"></div>
+        <!-- bagian file end -->
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

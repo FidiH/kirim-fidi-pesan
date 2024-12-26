@@ -1,0 +1,150 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  transition: 0.2s;
+}
+
+body {
+  color: #444;
+  background-color: #eee;
+  display: grid;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+}
+
+img,
+video {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.container {
+  padding: 3em;
+  position: relative;
+}
+
+.container h1 {
+  margin-bottom: 1em;
+  font-size: 2em;
+}
+
+.container .teks-fidi {
+  background-color: #ffa540;
+  color: #eee;
+  padding: 2px;
+  filter: blur(4px);
+}
+.container .teks-fidi:hover {
+  filter: blur(0.5px);
+  display: inline-block;
+  box-shadow: 6px 6px 5px #ffa540a6;
+  transform: rotate(-20deg) scale(0.9);
+}
+
+.boxPesan {
+  position: relative;
+}
+#hitungHuruf {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  opacity: 0.5;
+  font-size: 0.8em;
+}
+
+.input-form {
+  width: 100%;
+  margin: 15px 0;
+  resize: none;
+  border: none;
+  outline: none;
+  display: block;
+  padding: 12px;
+  background: none;
+  border-radius: 7px;
+  border: 1px solid #0000001f;
+}
+
+.input-form:hover::placeholder {
+  color: #ffa540c0;
+}
+
+.input-form:hover {
+  filter: drop-shadow(2px 2px 4px #ffa540c0);
+  border: 1px solid #ffa54090;
+}
+
+#tombol-media {
+  width: 100%;
+  display: block;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #ffa540;
+  color: #fff;
+  font-weight: 800;
+  text-align: center;
+}
+
+#media {
+  display: none;
+}
+
+.tombolBox {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  background-color: #ffa540;
+  border-radius: 7px;
+  overflow: hidden;
+  margin: 10px 0;
+}
+
+.tombolBox button {
+  font-size: 1em;
+  flex: 1;
+  color: #eee;
+  font-weight: 800;
+  padding: 5px;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border: none;
+}
+
+.tombolBox button:nth-child(1) {
+  background-color: #999;
+  color: #ffa540;
+}
+
+.tombolKirim:disabled {
+  background-color: red;
+  opacity: 0.4;
+}
+
+#notif {
+  padding: 20px;
+
+  border-radius: 0 0 10px 10px;
+  color: red;
+  font-weight: 800;
+}
+
+#hapusForm {
+  background-color: #ff8d0f;
+}
+
+#tombolHapusGambar {
+  font-size: 1em;
+  flex: 1;
+  color: #eee;
+  font-weight: 800;
+  padding: 5px;
+  width: 100%;
+  height: 100%;
+  background-color: #ff8d0f;
+  border-radius: 10px;
+  border: none;
+}
